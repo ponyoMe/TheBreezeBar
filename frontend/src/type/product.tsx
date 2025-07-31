@@ -46,6 +46,7 @@ import bao from '../assets/food/food_bao-removebg-preview.png'
 
 
 export type ProductProps={
+    id:string,
     name:string,
     type:'coffee'|'tea'|'snack'|'alcohol'|'food',
     price:number,
@@ -58,6 +59,7 @@ export type ProductProps={
 
 export const coffeeProducts: ProductProps[] = [
   {
+    id:'americano',
     name: "Americano",
     type: "coffee",
     price: 850,
@@ -65,6 +67,7 @@ export const coffeeProducts: ProductProps[] = [
     image: americano
   },
   {
+    id:'latte',
     name: "Latte",
     type: "coffee",
     price: 950,
@@ -72,6 +75,7 @@ export const coffeeProducts: ProductProps[] = [
     image: latte
   },
   {
+    id:'cappuchino',
     name: "Cappuccino",
     type: "coffee",
     price: 950,
@@ -79,6 +83,7 @@ export const coffeeProducts: ProductProps[] = [
     image: cappuchino
   },
   {
+    id:'flatwhite',
     name: "Flat White",
     type: "coffee",
     price: 1000,
@@ -86,6 +91,7 @@ export const coffeeProducts: ProductProps[] = [
     image: flatwhite
   },
   {
+    id:'mocha',
     name: "Mocha",
     type: "coffee",
     price: 1050,
@@ -93,6 +99,7 @@ export const coffeeProducts: ProductProps[] = [
     image: mocha
   },
   {
+    id:'espresso',
     name: "Espresso",
     type: "coffee",
     price: 700,
@@ -100,6 +107,7 @@ export const coffeeProducts: ProductProps[] = [
     image: espresso
   },
   {
+    id:'coldbrew',
     name: "Cold Brew",
     type: "coffee",
     price: 1100,
@@ -107,6 +115,7 @@ export const coffeeProducts: ProductProps[] = [
     image: coldbrew
   },
   {
+    id:'icedamericano',
     name: "Iced Americano",
     type: "coffee",
     price: 900,
@@ -114,6 +123,7 @@ export const coffeeProducts: ProductProps[] = [
     image: icedamericano
   },
   {
+    id:'icedlatte',
     name: "Iced Latte",
     type: "coffee",
     price: 1000,
@@ -124,6 +134,7 @@ export const coffeeProducts: ProductProps[] = [
 
 export const teaProducts: ProductProps[] = [
   {
+    id:'greentea',
     name: "Green Tea",
     type: "tea",
     price: 700,
@@ -131,6 +142,7 @@ export const teaProducts: ProductProps[] = [
     image: greentea
   },
   {
+    id:'blacktea',
     name: "Black Tea",
     type: "tea",
     price: 750,
@@ -138,6 +150,7 @@ export const teaProducts: ProductProps[] = [
     image: blacktea
   },
   {
+    id:'chailatte',
     name: "Chai Latte",
     type: "tea",
     price: 950,
@@ -145,6 +158,7 @@ export const teaProducts: ProductProps[] = [
     image: chailatte
   },
   {
+    id:'minttea',
     name: "Mint Tea",
     type: "tea",
     price: 700,
@@ -152,6 +166,7 @@ export const teaProducts: ProductProps[] = [
     image: minttea
   },
   {
+    id:'lemontea',
     name: "Lemon Tea",
     type: "tea",
     price: 800,
@@ -159,6 +174,7 @@ export const teaProducts: ProductProps[] = [
     image: lemontea
   },
   {
+    id:'matcha',
     name: "Matcha",
     type: "tea",
     price: 1000,
@@ -166,6 +182,7 @@ export const teaProducts: ProductProps[] = [
     image: matcha
   },
   {
+    id:'icedhibiscustea',
     name: "Iced Hibiscus Tea",
     type: "tea",
     price: 850,
@@ -173,6 +190,7 @@ export const teaProducts: ProductProps[] = [
     image: hibiscustea
   },
   {
+    id:'peachicedtea',
     name: "Peach Iced Tea",
     type: "tea",
     price: 900,
@@ -180,6 +198,7 @@ export const teaProducts: ProductProps[] = [
     image: peachicedtea
   },
   {
+    id:'jasminetea',
     name: "Jasmine Tea",
     type: "tea",
     price: 900,
@@ -187,6 +206,7 @@ export const teaProducts: ProductProps[] = [
     image: jasminetea
   },
   {
+    id:'strawberrysparklingtea',
     name: "Strawberry Sparking Tea",
     type: "tea",
     price: 950,
@@ -194,6 +214,7 @@ export const teaProducts: ProductProps[] = [
     image: strawberrysparklingtea
   },
   {
+    id:'kiwicooler',
     name: "Kiwi Cooler",
     type: "tea",
     price: 900,
@@ -201,6 +222,7 @@ export const teaProducts: ProductProps[] = [
     image: kiwicooler
   },
   {
+    id:'berryfizz',
     name: "Berry Fizz",
     type: "tea",
     price: 900,
@@ -211,6 +233,7 @@ export const teaProducts: ProductProps[] = [
 
 export const drinksProducts: ProductProps[] =[
     {
+      id:'midorisakesour',
       name: "Midori Sake Sour",
       type: "alcohol",
       price: 1500,
@@ -218,6 +241,7 @@ export const drinksProducts: ProductProps[] =[
       image: midorisakesour
     },
     {
+      id:'ume',
       name: "Ume Old Fashion",
       type: "alcohol",
       price: 1600,  
@@ -225,6 +249,7 @@ export const drinksProducts: ProductProps[] =[
       image: ume
     },
     {
+      id:'chawri',
       name: "Chawri",
       type: "alcohol",
       price: 1700,
@@ -232,6 +257,7 @@ export const drinksProducts: ProductProps[] =[
       image: chawri
     },
     {
+      id:'yuzu',
       name: "Yuzu Bee Knees",
       type: "alcohol",
       price: 1800,
@@ -239,6 +265,7 @@ export const drinksProducts: ProductProps[] =[
       image: yuzu
     },
     {
+      id:'pineappu',
       name:"Pineappu Beach",
       type: "alcohol",
       price: 1900,
@@ -246,6 +273,7 @@ export const drinksProducts: ProductProps[] =[
       image: pineappu
     },
     {
+      id:'sakuramartini',
       name: "Sakura Martini",
       type: "alcohol",
       price: 2000,
@@ -256,6 +284,7 @@ export const drinksProducts: ProductProps[] =[
 
 export const snackProducts : ProductProps[] = [
   {
+    id:'fruitbowl',
     name: "Fruit Salad",
     type: "snack",
     price: 800,
@@ -263,6 +292,7 @@ export const snackProducts : ProductProps[] = [
     image: fruitbowl
   },
   {
+    id:'icecreamwberry',
     name: "Ice Cream with Berries",
     type: "snack",
     price: 900,
@@ -270,6 +300,7 @@ export const snackProducts : ProductProps[] = [
     image: icecreamwberry
   },
   {
+    id:'peachbowl',
     name: "Peach Bowl",
     type: "snack",
     price: 850,
@@ -277,6 +308,7 @@ export const snackProducts : ProductProps[] = [
     image: peachbowl
   },
   {
+    id:'strawberrymousse',
     name: "Strawberry Mousse",
     type: "snack",
     price: 950,
@@ -284,6 +316,7 @@ export const snackProducts : ProductProps[] = [
     image: strawberrymousse
   },
   {
+    id:'icecream',
     name: "Strawberry Ice Cream",
     type: "snack",
     price: 600,
@@ -291,6 +324,7 @@ export const snackProducts : ProductProps[] = [
     image: icecream
   },
   {
+    id:'pudding',
     name: "Pudding",
     type: "snack",
     price: 700,
@@ -298,6 +332,7 @@ export const snackProducts : ProductProps[] = [
     image: pudding
   },
   {
+    id:'brunchtoasts',
     name: "Brunch Toasts",
     type: "snack",
     price: 1400,
@@ -305,6 +340,7 @@ export const snackProducts : ProductProps[] = [
     image: brunchtoasts
   },
   {
+  id:'peachyogurt',
     name: "Peach Yogurt Bomb",
     type: "snack",
     price: 900,
@@ -312,6 +348,7 @@ export const snackProducts : ProductProps[] = [
     image: peachyogurt
   },
   {
+    id:'blackberrytoast',
     name : "Blackberry Toast",
     type: "snack",
     price: 1000,
@@ -322,6 +359,7 @@ export const snackProducts : ProductProps[] = [
 
 export const foodProducts: ProductProps[] = [
   {
+    id:'kong',
     name : "Kongguksu",
     type: "food",
     price: 1800,
@@ -329,6 +367,7 @@ export const foodProducts: ProductProps[] = [
     image: kong
   },
   {
+  id:'bao',
   name: "Asian-style Bao Burger",
   type: "food",
   price: 2800,
@@ -337,6 +376,7 @@ export const foodProducts: ProductProps[] = [
    },
 
   {
+    id:'fooda1',
     name: "Asian-style light lunch 1",
     type: "food",
     price: 3000,  
@@ -344,6 +384,7 @@ export const foodProducts: ProductProps[] = [
     image: fooda1
   },
   {
+    id:'fooda2',
     name: "Asian-style light lunch 2",
     type: "food",
     price: 3000,
@@ -351,6 +392,7 @@ export const foodProducts: ProductProps[] = [
     image: fooda2
   },
   {
+    id:'fooda3',
     name: "Asian-style light lunch 3",
     type: "food",
     price: 3200,
@@ -358,6 +400,7 @@ export const foodProducts: ProductProps[] = [
     image: fooda3
   },
   {
+    id:'fooda4',  
     name: "Asian-style light lunch 4",
     type: "food",
     price: 3100,
@@ -365,6 +408,7 @@ export const foodProducts: ProductProps[] = [
     image: fooda4
   },
   {
+    id:'fooda5',
     name: "Asian-style light lunch 5",
     type: "food",
     price: 2900,
@@ -372,6 +416,7 @@ export const foodProducts: ProductProps[] = [
     image: fooda5
   },
   {
+    id:'fooda6',
     name: "Asian-style light lunch 6",
     type: "food",
     price: 3100,

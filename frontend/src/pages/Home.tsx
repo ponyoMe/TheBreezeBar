@@ -13,8 +13,7 @@ function Home() {
         <div className="m-7">
             <h1 className="text-5xl font-semibold">Pour up.</h1>
             <h1 className="text-5xl font-semibold">Drink.</h1>
-            <h1 className="text-5xl font-semibold">Sit back. Think</h1>
-
+            
             <button className="bg-blue-300 text-white py-2 px-4 rounded-2xl m-4">
           <NavLink to="/menu">View Menu</NavLink>
         </button>
