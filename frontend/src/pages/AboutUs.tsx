@@ -34,10 +34,7 @@ function AboutUs() {
               Come thirsty — for coffee, for clarity, or for something a little deeper.
              </p>
       </div>
-
-        
-
-      
+  
     </div>
   );
 }

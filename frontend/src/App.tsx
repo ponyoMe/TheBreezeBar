@@ -3,27 +3,27 @@ import Layout from './layout/Layout'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 
-import Order from './pages/Order'
+import Order from './pages/Services'
 import AboutUs from './pages/AboutUs'
 import Menu from './pages/Menu'
-import { CartProvider } from './context/CartContext'
 import { ActivePageProvider } from './context/ActivePageContext'
+import Services from './pages/Services'
 
 
 function App() {
   
   return (
     <ActivePageProvider>
-    <CartProvider>
+    
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/menu' element={<Menu />} />
         <Route path='/about-us' element={<AboutUs />} />
-        <Route path='/order' element={<Order />} />
+        <Route path='/services' element={<Services />} />
       </Routes>
     </Layout>
-    </CartProvider>
+    
     </ActivePageProvider>
   )
 }
