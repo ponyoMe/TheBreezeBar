@@ -1,32 +1,37 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useActivePage } from "../context/ActivePageContext";
 
 
-type NavItems={
+export type NavItems={
     name: string;
     path: string;
+    
 }
 
 export const navItems: NavItems[] = [
     {
         name: "Home",
-        path: "/"
+        path: "/",
+        
     }
    ,{
     name: "Menu",
-    path: "/menu"
+    path: "/menu",
+    
     },{ 
     name:"About Us",
-    path: "/about-us"
+    path: "/about-us",
+    
     },{
         name: "Order",
-        path: "/order"
+        path: "/order",
+        
    }
 ]
 
 function NavBar(){
-    const [isActive, setIsActive] = useState('Home')
-
+    const myContext = useActivePage();
     return(
         <div className="flex flex-row items-center justify-between p-2 px-7 m-4">
             <div className="flex flex-col ">
@@ -36,8 +41,8 @@ function NavBar(){
             <nav>
                 <ul className="flex flex-row p-4 gap-2">
                     {navItems.map(item=>(
-                        <NavLink to={item.path} key={item.name} onClick={() => setIsActive(item.name)} >
-                            <li className={`p-2 rounded-xl ${isActive===item.name ? 'underline':''} `}>{item.name}</li>
+                        <NavLink to={item.path} key={item.name} onClick={() => myContext.setActivePage(item.name)} >
+                            <li className={`p-2 rounded-xl ${myContext.name===item.name ? 'underline':''} `}>{item.name}</li>
                         </NavLink>
                     ))}
                 </ul>

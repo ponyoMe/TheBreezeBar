@@ -11,7 +11,7 @@ function Menu() {
 
 
   return (
-    <div className="flex flex-col items-center min-h-screen gap-10">
+    <div className="flex flex-col items-center min-h-screen gap-10 m-10">
       <ProductSection title="Coffee" products={coffeeProducts} />
       <ProductSection title="Tea" products={teaProducts} />
       <ProductSection title="Drinks" products={drinksProducts} />

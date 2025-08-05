@@ -1,8 +1,21 @@
+import { use } from "react";
+import { useCart } from "../context/CartContext";
+import { CartItem } from "../components/CartItem";
+
+
+//displays order sum and i need to add payment method and order details 
+
+
 function Order() {
+ 
+  const cartContext = useCart() 
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-2xl font-bold mb-4">Order Page</h1>
-      <p className="text-gray-700">This is the order page.</p>
+    <div className="flex flex-col items-start min-h-screen ml-10">
+      <h1 className="text-2xl font-semibold">Your Order:</h1>
+      <CartItem />
+
+      
     </div>
   );
 }
