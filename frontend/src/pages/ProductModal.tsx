@@ -1,9 +1,4 @@
 import type { ProductProps } from "../type/product";
-import { FaCartShopping } from "react-icons/fa6";
-import { useState } from "react";
-import { IoCartSharp } from "react-icons/io5";
-import { IoCartOutline } from "react-icons/io5";
-
 
 type ModalProps={
     product: ProductProps,
@@ -12,12 +7,9 @@ type ModalProps={
 
 function ProductModal({product, onClose} : ModalProps){
    
-
-   
-   
     return(
-        <div className="absolute -top-20 left-0 right-0 flex item-center justify-center z-50">
-            <div className="bg-white rounded-2xl p-6 w-[400px] h-[420px] flex flex-col items-center justify-center shadow-lg">
+        <div className="absolute top-0 left-0 right-0 flex item-center justify-center z-50">
+            <div className="bg-white border-1 border-[#9ba8ab] rounded-2xl p-6 w-[380px] h-[400px] flex flex-col items-center justify-center shadow-2xl">
             <div className="flex w-full justify-end items-center mb-4">
                 
                 <button onClick={onClose} className="bg-red-400 text-white p-2 rounded-2xl" >Close</button>

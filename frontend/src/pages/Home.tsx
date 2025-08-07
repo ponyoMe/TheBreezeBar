@@ -46,21 +46,21 @@ function Home() {
             <h1 className="text-5xl font-semibold">Pour up.</h1>
             <h1 className="text-5xl font-semibold">Drink.</h1>
             
-            <button onClick={()=>activePageContext.setActivePage('Menu')} className="bg-blue-300 text-white py-2 px-4 rounded-2xl m-4 hover:bg-blue-400 transition-colors">
+        <button onClick={()=>activePageContext.setActivePage('Menu')} className="bg-[#253745] text-white py-2 px-4 rounded-2xl m-4 hover:bg-[#06141b] transition-colors">
           <NavLink to="/menu">View Menu</NavLink>
         </button>
         
         <div className="flex flex-row items-center gap-5">
-            <GiCoffeeCup size={50} onClick={() => setProducts('coffee')} className="border border-blue-300 p-2 rounded-2xl bg-transparent hover:border-blue-500 hover:border-2" />
-            <GiTeapotLeaves  size={50} onClick={() => setProducts('tea')} className="border border-blue-300 p-2 rounded-2xl bg-transparent hover:border-blue-500 hover:border-2" />
-            <Martini size={50} onClick={() => setProducts('alcohol')} className="border border-blue-300 p-2 rounded-2xl bg-transparent hover:border-blue-500 hover:border-2" />
-            <Sandwich size={50} onClick={() => setProducts('snack')} className="border border-blue-300 p-2 rounded-2xl bg-transparent hover:border-blue-500 hover:border-2" />
-            <PiBowlFoodFill size={50} onClick={() => setProducts('food')} className="border border-blue-300 p-2 rounded-2xl bg-transparent hover:border-blue-500 hover:border-2" />
+            <GiCoffeeCup size={50} onClick={() => setProducts('coffee')} className="border border-[#4a5c6a] p-2 rounded-2xl bg-transparent hover:border-[#06141b] hover:border-2" />
+            <GiTeapotLeaves  size={50} onClick={() => setProducts('tea')} className="border border-[#4a5c6a] p-2 rounded-2xl bg-transparent hover:border-[#06141b] hover:border-2" />
+            <Martini size={50} onClick={() => setProducts('alcohol')} className="border border-[#4a5c6a] p-2 rounded-2xl bg-transparent hover:border-[#06141b] hover:border-2" />
+            <Sandwich size={50} onClick={() => setProducts('snack')} className="border border-[#4a5c6a] p-2 rounded-2xl bg-transparent hover:border-[#06141b] hover:border-2" />
+            <PiBowlFoodFill size={50} onClick={() => setProducts('food')} className="border border-[#4a5c6a] p-2 rounded-2xl bg-transparent hover:border-[#06141b] hover:border-2" />
         </div>
 
         </div>
         <div className="flex flex-col items-center justify-center">
-            <img src={menubg} className="w-50" />
+           <img src={menubg} className="w-50" />
         </div>
 
       

@@ -1,1 +1,14 @@
-@import 'tailwindcss'
+@import 'tailwindcss';
+
+/* Custom utilities */
+@layer utilities {
+    .no-scrollbar{
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .no-scrollbar::-webkit-scrollbar{
+        display: none;
+    }
+	
+}

@@ -11,7 +11,7 @@ import {AiFillInstagram} from 'react-icons/ai'
                 transform: 'scale(1.1)',
             }}
             ></div>
-            <div className="flex flex-col min-h-screen rounded-2xl bg-[#fdf1f5] z-10 backdrop-blur-2xl pt-7 m-9">
+            <div className="flex flex-col min-h-screen rounded-2xl bg-white z-10 backdrop-blur-2xl pt-7 m-9">
                 <NavBar />
             <main>
                 {children}

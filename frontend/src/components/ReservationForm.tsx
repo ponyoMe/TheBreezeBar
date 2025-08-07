@@ -14,11 +14,13 @@ export default function ReservationForm() {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm<FormData>();
 
   const onSubmit = (data: FormData) => {
     console.log('Reservation Data:', data);
     alert('Reservation submitted successfully!');
+    reset()
   };
 
   const today = new Date().toISOString().split('T')[0];
@@ -99,7 +101,7 @@ export default function ReservationForm() {
         />
       </div>
 
-      <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+      <button type="submit" className="bg-[#253745] text-white px-4 py-2 rounded hover:bg-blue-600">
         Submit Reservation
       </button>
     </form>

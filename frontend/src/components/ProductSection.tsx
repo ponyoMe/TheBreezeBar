@@ -18,7 +18,7 @@ function ProductSection(props:ProductSectionProps) {
     return(
         <div className="w-full relative">
           <h1 className="text-2xl uppercase font-semibold">{props.title}</h1>
-        <div className="flex flex-row flex-nowrap overflow-x-auto gap-x-6 p-4">
+        <div className="flex flex-row flex-nowrap overflow-x-auto gap-x-6 p-4 m-5 no-scrollbar">
         {
           visibleProducts.map(p=>( 
               <ProductCard {...p} product={p} onClick={setSelected} />
